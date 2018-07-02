@@ -6,14 +6,27 @@ body{
   font-weight: 300;
   font-size: 2em;
   position: relative;
-  background-color: #337ab7;
+  background: linear-gradient(#3d0159, #d1b2df);
   font-size: 16px;
+  text-align: center;
+  color: gold;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   margin: 0;
+}
+
+#headerImg{
+  width: 400px;
+}
+
+@media screen and (max-width: 660px) {
+#headerImg{
+  width: 60%;
+}
+  
 }
 
 /**  Header Navigation **/

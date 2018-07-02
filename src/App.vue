@@ -1,11 +1,11 @@
 
 <template>
-  <div id="main-app">
-    <img src="./assets/libra.svg">
+  <div id="main-app" class="container-fluid">
+    <img id="headerImg" src="./assets/libra.svg">
 
     <add-appointment @addReq="appAdd"/>
     <search-appointment :filKey="filterKey" :filDir="filterDir" @searchRec="searchApts" @keyChange="changeKey" @dirChange="changeDir"/>
-    <appointment-list
+    <router-view
       :appointments = 'filteredApts' @remove="removeItem"/>
   </div>
 </template>
